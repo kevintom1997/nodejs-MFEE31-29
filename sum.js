@@ -1,9 +1,6 @@
 function sum(n) {
-    for (let i = 1; i < n + 1; i++) {
-        for (let j = 1; j < i; j++) {
-            j = j+1;
-        }
-    }
+    let result = (1 + n) * n / 2;
+    return result;
 };
 
 console.log(sum(10));
