@@ -31,7 +31,7 @@ require('dotenv').config();
 
     let stockNo = await fs.readFile('stock.txt', 'utf-8');
     console.log(stockNo);
-    let date = moment().format('YYYYMMDD');
+    let date = 202212;
     console.log(date);
     let response = await axios.get(`http://54.71.133.152:3000/stocks`, {
       params: {
